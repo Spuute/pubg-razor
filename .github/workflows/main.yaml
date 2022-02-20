@@ -16,7 +16,7 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Publish .NET Core Project
-      run: dotnet publish pubgstats.csproj -c Release -o release –nologo
+      run: dotnet publish pubgstats.csproj -c Release -o release
 
     - name: Change base-tag in index.html from / to pubgstats
       run: sed -i ‘s/<base href=”\/” \/>/<base href=”\/pubgstats\/” \/>/g’ release/wwwroot/index.html
