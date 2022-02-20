@@ -21,8 +21,8 @@ jobs:
     # - name: Change base-tag in index.html from / to pubgstats
     #   run: sed -i ‘s/<base href=”\/” \/>/<base href=”\/pubgstats\/” \/>/g’ release/wwwroot/index.html
 
-    - name: copy index.html to 404.html
-      run: cp release/wwwroot/index.html release/wwwroot/404.html
+    # - name: copy index.html to 404.html
+    #   run: cp release/wwwroot/index.html release/wwwroot/404.html
 
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll  
